@@ -1,0 +1,492 @@
+/*GLOBALES*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*1 rem = 10 px*/
+}
+body {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+.centrar-texto {
+  text-align: center;
+}
+
+:root {
+  /*Regular 400*/
+  /*medium 500*/
+  /*bold 700*/
+  --fuenteCousine: "Cousine", monospace;
+  --fuenteMonse: "Montserrat", sans-serif;
+
+  --rosa: #de0e7e;
+  --blanco: #ffffff;
+  --gris: #2a2a2a;
+  --negro: #0a0a0a;
+}
+a.active {
+  font-family: var(--fuenteCousine);
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--rosa);
+}
+a {
+  font-family: var(--fuenteCousine);
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--blanco);
+}
+img {
+  max-width: 100%;
+}
+
+.contenedor {
+  margin: 0 auto;
+  max-width: 150rem;
+  width: 100%;
+}
+.contenedor__social {
+  margin: 0 auto;
+  max-width: 150rem;
+  width: 90%;
+}
+/*HEADER*/
+header {
+  background-color: var(--negro);
+}
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+.imagen {
+  display: flex;
+  align-items: center;
+}
+.logo__nombre {
+  margin-left: 0.5rem;
+}
+li {
+  list-style: none;
+  display: inline;
+  margin-left: 5rem;
+  font-family: var(--fuenteHeading);
+}
+/*LANZAMIENTO*/
+.lanzamiento {
+  height: 120rem;
+  background-image: url(../img/principal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.principal {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--blanco);
+}
+.texto {
+  text-align: center;
+  line-height: 1.3;
+}
+.texto h2 {
+  font-family: var(--fuenteMonse);
+  font-weight: 700;
+  font-size: 3rem;
+}
+.texto h1 {
+  font-family: var(--fuenteMonse);
+  font-weight: 200;
+  font-size: 7rem;
+  letter-spacing: 2rem;
+}
+.boton {
+  font-family: var(--fuenteCousine);
+  font-weight: 700;
+  padding: 1.4rem 6rem;
+  border: 0.4rem solid var(--blanco);
+  color: var(--blanco);
+  text-transform: uppercase;
+  transition: all 0.25 ease-in;
+  transition-property: color;
+}
+.boton:hover {
+  background-color: var(--rosa);
+  border: 0.4rem solid var(--rosa);
+}
+/*VINILO*/
+.vinilo {
+  height: 110rem;
+  background-color: var(--blanco);
+}
+
+.secundario {
+  display: flex;
+  justify-content: space-between;
+}
+.secundario img {
+  padding: 30rem 0;
+  max-height: 100%;
+  max-width: 100%;
+}
+.texto2 {
+  width: 50rem;
+  padding: 40rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 1;
+}
+.texto2 h2 {
+  font-family: var(--fuenteCousine);
+  font-weight: 500;
+  color: var(--rosa);
+  font-size: 4rem;
+}
+.texto2 h1 {
+  font-family: var(--fuenteMonse);
+  font-size: 5rem;
+}
+.texto2 p {
+  margin-top: 2rem;
+  font-family: var(--fuenteMonse);
+  font-size: 2rem;
+}
+.boton2 {
+  margin-top: 5rem;
+  font-family: var(--fuenteCousine);
+  font-weight: 700;
+  padding: 2rem 7rem;
+  border: 0.4rem solid var(--negro);
+  color: var(--negro);
+  text-transform: uppercase;
+  transition: all 0.25 ease-in;
+  transition-property: color;
+  font-size: 2.5rem;
+}
+.boton2:hover {
+  color: var(--blanco);
+  background-color: var(--rosa);
+  border: 0.4rem solid var(--rosa);
+}
+/*SOMOS SOCIALES*/
+
+.instagram {
+  height: 100rem;
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+.texto__social {
+  line-height: 1.3;
+}
+.texto__social h2 {
+  padding-top: 5rem;
+  font-family: var(--fuenteCousine);
+  font-weight: 500;
+  font-size: 4rem;
+}
+.texto__social h1 {
+  font-family: var(--fuenteMonse);
+  font-weight: 700;
+  font-size: 5rem;
+}
+.foto {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.foto img {
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  height: 38rem;
+  text-align: center;
+}
+/*FOOTER*/
+.footer {
+  background-color: var(--gris);
+  color: var(--blanco);
+  padding: 3rem 0;
+}
+.contenedor__footer {
+  display: flex;
+  justify-content: space-between;
+}
+.texto4 {
+  display: flex;
+  align-items: center;
+}
+.texto4 h1 {
+  font-family: var(--fuenteMonse);
+
+  font-weight: 700;
+}
+.texto4 h2 {
+  font-family: var(--fuenteMonse);
+
+  font-weight: 400;
+}
+.icon img {
+  height: 4rem;
+  width: 4rem;
+  /* background-color: #ffffff; */
+  border-radius: 0.1rem;
+}
+
+/*PAGINA DISCOGRAFIA*/
+.disco {
+  height: 60rem;
+  background-color: var(--blanco);
+}
+.secundario__discografia {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.secundario__discografia img {
+  margin-top: 8rem;
+  height: 60rem;
+  width: 70rem;
+}
+.texto2__discografia {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 1;
+}
+.texto2__discografia h2 {
+  font-family: var(--fuenteCousine);
+  font-weight: 500;
+  color: var(--rosa);
+  font-size: 4rem;
+}
+.texto2__discografia h1 {
+  font-family: var(--fuenteMonse);
+  font-size: 5rem;
+}
+.texto2__discografia h3 {
+  font-family: var(--fuenteMonse);
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.texto2__discografia p {
+  margin-top: 2rem;
+  font-family: var(--fuenteMonse);
+  /* font-size: 1rem; */
+}
+.boton2 {
+  margin-top: 5rem;
+  font-family: var(--fuenteCousine);
+  font-weight: 700;
+  padding: 2rem 7rem;
+  border: 0.4rem solid var(--negro);
+  color: var(--negro);
+  text-transform: uppercase;
+  transition: all 0.25 ease-in;
+  transition-property: color;
+  font-size: 2.5rem;
+}
+
+.discografia {
+  height: 70rem;
+  background-color: var(--blanco);
+}
+.fotos {
+  margin-top: 20rem;
+  display: flex;
+  justify-content: space-around;
+}
+.discos img {
+  height: 40rem;
+  width: 40rem;
+}
+.discos h1 {
+  text-align: center;
+  font-family: var(--fuenteMonse);
+  font-size: 2.5rem;
+}
+
+.discos h2 {
+  font-family: var(--fuenteCousine);
+  text-align: center;
+
+  font-weight: 500;
+  color: var(--rosa);
+  font-size: 2rem;
+}
+
+/*PAGINA TIENDA*/
+
+.listado a {
+  font-family: var(--fuenteMonse);
+  color: var(--negro);
+  font-weight: 700;
+}
+.listado a:hover {
+  color: var(--rosa);
+}
+.tienda h1 {
+  font-family: var(--fuenteMonse);
+}
+.productos {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+  margin: 8rem;
+}
+.productos img {
+  height: 25rem;
+  width: 25rem;
+}
+.producto {
+  background-color: var(--negro);
+  margin: 1rem;
+  padding: 0 0 0.8rem 0;
+}
+.producto h1 {
+  color: var(--blanco);
+  font-family: var(--fuenteMonse);
+  font-size: 2rem;
+  padding-bottom: 8rem 0;
+}
+.producto:hover {
+  background-color: var(--rosa);
+}
+.correo {
+  height: 20rem;
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+.boton3 {
+  font-family: var(--fuenteCousine);
+  font-weight: 700;
+  padding: 0.5rem 5rem;
+  border: 0.4rem solid var(--blanco);
+  color: var(--blanco);
+  text-transform: uppercase;
+  transition: all 0.25 ease-in;
+  transition-property: color;
+  font-size: 2.5rem;
+}
+.boton3:hover {
+  color: var(--blanco);
+  background-color: var(--rosa);
+  border: 0.4rem solid var(--rosa);
+}
+#comentario {
+  font-family: var(--fuenteCousine);
+  font-weight: 700;
+  width: 55rem;
+  padding: 2rem 3rem;
+}
+#comentario::placeholder {
+  color: var(--negro);
+  opacity: 1;
+  font-size: 1.4rem;
+}
+.email {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.email h1 {
+  font-family: var(--fuenteMonse);
+  line-height: 1;
+}
+
+/*PAGINA CONTACTO*/
+.piano {
+  height: 40rem;
+  background-image: url(../img/contacto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.contenedor__contacto {
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacto {
+  text-align: left;
+  padding: 2rem;
+  height: 31rem;
+  width: 20rem;
+  background-color: var(--negro);
+  color: var(--blanco);
+  margin: 5rem 5rem;
+}
+.empleado {
+  margin: 2rem 0;
+}
+.empleado h1 {
+  font-family: var(--fuenteMonse);
+  font-size: 2rem;
+  line-height: 1;
+}
+.empleado h2 {
+  font-family: var(--fuenteMonse);
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.empleado p {
+  font-family: var(--fuenteCousine);
+  font-size: 1.2rem;
+}
+.estamos__contacto {
+  margin: 0 3rem;
+  padding: 2rem;
+  height: 31rem;
+  width: 30rem;
+}
+.estamos__contacto h1 {
+  font-family: var(--fuenteMonse);
+}
+.estamos__contacto p {
+  font-family: var(--fuenteMonse);
+  font-weight: 500;
+}
+
+form {
+  font-family: var(--fuenteCousine);
+  font-weight: 700;
+}
+form input {
+  width: 30rem;
+  padding: 1rem 3rem;
+  border: 0.2rem solid var(--negro);
+}
+.boton4 {
+  padding: 0.8rem;
+  text-align: center;
+  width: 20rem;
+  margin-top: 2rem;
+  font-family: var(--fuenteCousine);
+  font-weight: 700;
+  border: 0.4rem solid var(--negro);
+  color: var(--negro);
+  text-transform: uppercase;
+  transition: all 0.25 ease-in;
+  transition-property: color;
+  font-size: 1.5rem;
+}
+.boton4:hover {
+  color: var(--blanco);
+  background-color: var(--rosa);
+  border: 0.4rem solid var(--rosa);
+}
