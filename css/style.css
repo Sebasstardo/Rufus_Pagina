@@ -82,7 +82,7 @@ li {
 }
 /*LANZAMIENTO*/
 .lanzamiento {
-  height: 120rem;
+  height: 100vh;
   background-image: url(../img/principal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,22 +127,25 @@ li {
 }
 /*VINILO*/
 .vinilo {
-  height: 110rem;
+  height: 100vh;
   background-color: var(--blanco);
+}
+.secundario_vinilo,
+.texto2 {
+  flex-basis: 50%;
 }
 
 .secundario {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 18rem;
 }
 .secundario img {
-  padding: 30rem 0;
-  max-height: 100%;
   max-width: 100%;
 }
 .texto2 {
-  width: 50rem;
-  padding: 40rem 0;
+  width: 90%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -184,7 +187,6 @@ li {
 /*SOMOS SOCIALES*/
 
 .instagram {
-  height: 100rem;
   background-color: var(--negro);
   color: var(--blanco);
 }
@@ -223,6 +225,13 @@ li {
 .contenedor__footer {
   display: flex;
   justify-content: space-between;
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
+.icons figure {
+  margin-right: 5rem;
 }
 .texto4 {
   display: flex;
@@ -489,4 +498,76 @@ form input {
   color: var(--blanco);
   background-color: var(--rosa);
   border: 0.4rem solid var(--rosa);
+}
+
+@media (max-width: 769px) {
+  .navegacion {
+    padding-right: 4rem;
+  }
+  .vinilo {
+    height: 90rem;
+  }
+  .secundario {
+    padding-top: 30rem;
+  }
+  .foto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 415px) {
+  .texto h1 {
+    font-size: 3rem;
+  }
+  .texto h2 {
+    font-size: 2rem;
+  }
+  .secundario {
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .secundario_vinilo img {
+    height: 15rem;
+  }
+  .texto2 {
+    text-align: center;
+  }
+  .texto2 h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+  .texto2 h1 {
+    font-size: 2.5rem;
+  }
+  .texto2 p {
+    font-size: 2rem;
+  }
+  .boton2 {
+    margin-top: 5rem;
+    font-family: var(--fuenteCousine);
+    font-weight: 700;
+    padding: 1rem 5rem;
+    border: 0.4rem solid var(--negro);
+    color: var(--negro);
+    text-transform: uppercase;
+    transition: all 0.25 ease-in;
+    transition-property: color;
+    font-size: 2rem;
+  }
+  .texto__social h2 {
+    font-size: 4rem;
+  }
+  .texto__social h1 {
+    font-size: 2.5rem;
+  }
+
+  .foto figure img {
+    height: 20rem;
+  }
+  .icons figure {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
 }
